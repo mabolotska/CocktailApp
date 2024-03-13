@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E0D4D566E9D4DF78BB12B5E /* Pods_CocktailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30122E36A284C7F47AEF50F1 /* Pods_CocktailApp.framework */; };
+		D0B681D62B9EE2A800B0E9A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681D52B9EE2A800B0E9A0 /* AppDelegate.swift */; };
+		D0B681D82B9EE2A800B0E9A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681D72B9EE2A800B0E9A0 /* SceneDelegate.swift */; };
+		D0B681DA2B9EE2A800B0E9A0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681D92B9EE2A800B0E9A0 /* SearchViewController.swift */; };
+		D0B681DD2B9EE2A800B0E9A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B681DB2B9EE2A800B0E9A0 /* Main.storyboard */; };
+		D0B681DF2B9EE2AB00B0E9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B681DE2B9EE2AB00B0E9A0 /* Assets.xcassets */; };
+		D0B681E22B9EE2AB00B0E9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B681E02B9EE2AB00B0E9A0 /* LaunchScreen.storyboard */; };
+		D0B681EB2B9EE80500B0E9A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D0B681EA2B9EE80500B0E9A0 /* SnapKit */; };
+		D0B681ED2B9EE80500B0E9A0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D0B681EC2B9EE80500B0E9A0 /* SnapKit-Dynamic */; };
+		D0B681F02B9EE81800B0E9A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0B681EF2B9EE81800B0E9A0 /* Alamofire */; };
+		D0B681F22B9EE81800B0E9A0 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D0B681F12B9EE81800B0E9A0 /* AlamofireDynamic */; };
+		D0B681F72B9EEF7A00B0E9A0 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681F62B9EEF7A00B0E9A0 /* Cocktail.swift */; };
+		D0B681FA2B9EF0B200B0E9A0 /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681F92B9EF0B200B0E9A0 /* CocktailCell.swift */; };
+		D0B681FD2B9EF16400B0E9A0 /* Ext+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681FC2B9EF16400B0E9A0 /* Ext+UILabel.swift */; };
+		D0B681FF2B9F7C8000B0E9A0 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B681FE2B9F7C8000B0E9A0 /* UIHelper.swift */; };
+		D0B682022B9F900A00B0E9A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682012B9F900A00B0E9A0 /* NetworkManager.swift */; };
+		D0B682042B9F906B00B0E9A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682032B9F906B00B0E9A0 /* Constants.swift */; };
+		D0B682072B9FBEB000B0E9A0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682062B9FBEB000B0E9A0 /* TabBarViewController.swift */; };
+		D0B682092B9FBF1000B0E9A0 /* IngredientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682082B9FBF1000B0E9A0 /* IngredientsVC.swift */; };
+		D0B6820B2BA03B8D00B0E9A0 /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6820A2BA03B8D00B0E9A0 /* IngredientsCell.swift */; };
+		D0B6820D2BA04BDE00B0E9A0 /* FullRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6820C2BA04BDE00B0E9A0 /* FullRecipeVC.swift */; };
+		D0B6820F2BA04D4600B0E9A0 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6820E2BA04D4600B0E9A0 /* RecipeCell.swift */; };
+		D0B682112BA0505F00B0E9A0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682102BA0505F00B0E9A0 /* Test.swift */; };
+		D0B682162BA19C4800B0E9A0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B682152BA19C4800B0E9A0 /* Ingredient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01E00CA3B4AF2BAAC3034F87 /* Pods-CocktailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocktailApp.release.xcconfig"; path = "Target Support Files/Pods-CocktailApp/Pods-CocktailApp.release.xcconfig"; sourceTree = "<group>"; };
+		30122E36A284C7F47AEF50F1 /* Pods_CocktailApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocktailApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B681D22B9EE2A800B0E9A0 /* CocktailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B681D52B9EE2A800B0E9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0B681D72B9EE2A800B0E9A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0B681D92B9EE2A800B0E9A0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D0B681DC2B9EE2A800B0E9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0B681DE2B9EE2AB00B0E9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0B681E12B9EE2AB00B0E9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0B681E32B9EE2AB00B0E9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B681F62B9EEF7A00B0E9A0 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		D0B681F92B9EF0B200B0E9A0 /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		D0B681FC2B9EF16400B0E9A0 /* Ext+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UILabel.swift"; sourceTree = "<group>"; };
+		D0B681FE2B9F7C8000B0E9A0 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		D0B682012B9F900A00B0E9A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D0B682032B9F906B00B0E9A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0B682062B9FBEB000B0E9A0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D0B682082B9FBF1000B0E9A0 /* IngredientsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsVC.swift; sourceTree = "<group>"; };
+		D0B6820A2BA03B8D00B0E9A0 /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
+		D0B6820C2BA04BDE00B0E9A0 /* FullRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRecipeVC.swift; sourceTree = "<group>"; };
+		D0B6820E2BA04D4600B0E9A0 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		D0B682102BA0505F00B0E9A0 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		D0B682152BA19C4800B0E9A0 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		D24929DC8E846C05DA31A4DB /* Pods-CocktailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocktailApp.debug.xcconfig"; path = "Target Support Files/Pods-CocktailApp/Pods-CocktailApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0B681CF2B9EE2A800B0E9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B681F02B9EE81800B0E9A0 /* Alamofire in Frameworks */,
+				D0B681F22B9EE81800B0E9A0 /* AlamofireDynamic in Frameworks */,
+				D0B681EB2B9EE80500B0E9A0 /* SnapKit in Frameworks */,
+				D0B681ED2B9EE80500B0E9A0 /* SnapKit-Dynamic in Frameworks */,
+				1E0D4D566E9D4DF78BB12B5E /* Pods_CocktailApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4937765847F59EA9EE62BF02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30122E36A284C7F47AEF50F1 /* Pods_CocktailApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A77EF1358194F36AA2F1CE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D24929DC8E846C05DA31A4DB /* Pods-CocktailApp.debug.xcconfig */,
+				01E00CA3B4AF2BAAC3034F87 /* Pods-CocktailApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0B681C92B9EE2A800B0E9A0 = {
+			isa = PBXGroup;
+			children = (
+				D0B681D42B9EE2A800B0E9A0 /* CocktailApp */,
+				D0B681D32B9EE2A800B0E9A0 /* Products */,
+				9A77EF1358194F36AA2F1CE0 /* Pods */,
+				4937765847F59EA9EE62BF02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0B681D32B9EE2A800B0E9A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681D22B9EE2A800B0E9A0 /* CocktailApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B681D42B9EE2A800B0E9A0 /* CocktailApp */ = {
+			isa = PBXGroup;
+			children = (
+				D0B682052B9FBE5A00B0E9A0 /* Controllers */,
+				D0B681FB2B9EF14200B0E9A0 /* Extensions */,
+				D0B681F82B9EF09F00B0E9A0 /* Views */,
+				D0B681F42B9EE93700B0E9A0 /* Networking */,
+				D0B682032B9F906B00B0E9A0 /* Constants.swift */,
+				D0B681F32B9EE8C300B0E9A0 /* Application */,
+				D0B681E32B9EE2AB00B0E9A0 /* Info.plist */,
+			);
+			path = CocktailApp;
+			sourceTree = "<group>";
+		};
+		D0B681F32B9EE8C300B0E9A0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681D52B9EE2A800B0E9A0 /* AppDelegate.swift */,
+				D0B681DE2B9EE2AB00B0E9A0 /* Assets.xcassets */,
+				D0B681E02B9EE2AB00B0E9A0 /* LaunchScreen.storyboard */,
+				D0B681DB2B9EE2A800B0E9A0 /* Main.storyboard */,
+				D0B681D72B9EE2A800B0E9A0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D0B681F42B9EE93700B0E9A0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D0B682002B9F8FF600B0E9A0 /* Manager */,
+				D0B681F52B9EE93F00B0E9A0 /* Model */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D0B681F52B9EE93F00B0E9A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681F62B9EEF7A00B0E9A0 /* Cocktail.swift */,
+				D0B682152BA19C4800B0E9A0 /* Ingredient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0B681F82B9EF09F00B0E9A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681F92B9EF0B200B0E9A0 /* CocktailCell.swift */,
+				D0B6820A2BA03B8D00B0E9A0 /* IngredientsCell.swift */,
+				D0B6820E2BA04D4600B0E9A0 /* RecipeCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0B681FB2B9EF14200B0E9A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681FC2B9EF16400B0E9A0 /* Ext+UILabel.swift */,
+				D0B681FE2B9F7C8000B0E9A0 /* UIHelper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0B682002B9F8FF600B0E9A0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D0B682012B9F900A00B0E9A0 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D0B682052B9FBE5A00B0E9A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0B681D92B9EE2A800B0E9A0 /* SearchViewController.swift */,
+				D0B682062B9FBEB000B0E9A0 /* TabBarViewController.swift */,
+				D0B682082B9FBF1000B0E9A0 /* IngredientsVC.swift */,
+				D0B6820C2BA04BDE00B0E9A0 /* FullRecipeVC.swift */,
+				D0B682102BA0505F00B0E9A0 /* Test.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0B681D12B9EE2A800B0E9A0 /* CocktailApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B681E62B9EE2AB00B0E9A0 /* Build configuration list for PBXNativeTarget "CocktailApp" */;
+			buildPhases = (
+				EE648E4E8CBE2B97191212B2 /* [CP] Check Pods Manifest.lock */,
+				D0B681CE2B9EE2A800B0E9A0 /* Sources */,
+				D0B681CF2B9EE2A800B0E9A0 /* Frameworks */,
+				D0B681D02B9EE2A800B0E9A0 /* Resources */,
+				D74F66596CB04B789D631FF5 /* [CP] Embed Pods Frameworks */,
+				D0B682142BA107C600B0E9A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocktailApp;
+			packageProductDependencies = (
+				D0B681EA2B9EE80500B0E9A0 /* SnapKit */,
+				D0B681EC2B9EE80500B0E9A0 /* SnapKit-Dynamic */,
+				D0B681EF2B9EE81800B0E9A0 /* Alamofire */,
+				D0B681F12B9EE81800B0E9A0 /* AlamofireDynamic */,
+			);
+			productName = CocktailApp;
+			productReference = D0B681D22B9EE2A800B0E9A0 /* CocktailApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0B681CA2B9EE2A800B0E9A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D0B681D12B9EE2A800B0E9A0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = D0B681CD2B9EE2A800B0E9A0 /* Build configuration list for PBXProject "CocktailApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0B681C92B9EE2A800B0E9A0;
+			packageReferences = (
+				D0B681E92B9EE80500B0E9A0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D0B681EE2B9EE81800B0E9A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = D0B681D32B9EE2A800B0E9A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B681D12B9EE2A800B0E9A0 /* CocktailApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0B681D02B9EE2A800B0E9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B681E22B9EE2AB00B0E9A0 /* LaunchScreen.storyboard in Resources */,
+				D0B681DF2B9EE2AB00B0E9A0 /* Assets.xcassets in Resources */,
+				D0B681DD2B9EE2A800B0E9A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0B682142BA107C600B0E9A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		D74F66596CB04B789D631FF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocktailApp/Pods-CocktailApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocktailApp/Pods-CocktailApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocktailApp/Pods-CocktailApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE648E4E8CBE2B97191212B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocktailApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0B681CE2B9EE2A800B0E9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B681FD2B9EF16400B0E9A0 /* Ext+UILabel.swift in Sources */,
+				D0B681DA2B9EE2A800B0E9A0 /* SearchViewController.swift in Sources */,
+				D0B682112BA0505F00B0E9A0 /* Test.swift in Sources */,
+				D0B681FA2B9EF0B200B0E9A0 /* CocktailCell.swift in Sources */,
+				D0B682162BA19C4800B0E9A0 /* Ingredient.swift in Sources */,
+				D0B6820F2BA04D4600B0E9A0 /* RecipeCell.swift in Sources */,
+				D0B681D62B9EE2A800B0E9A0 /* AppDelegate.swift in Sources */,
+				D0B6820B2BA03B8D00B0E9A0 /* IngredientsCell.swift in Sources */,
+				D0B682022B9F900A00B0E9A0 /* NetworkManager.swift in Sources */,
+				D0B681D82B9EE2A800B0E9A0 /* SceneDelegate.swift in Sources */,
+				D0B681F72B9EEF7A00B0E9A0 /* Cocktail.swift in Sources */,
+				D0B681FF2B9F7C8000B0E9A0 /* UIHelper.swift in Sources */,
+				D0B6820D2BA04BDE00B0E9A0 /* FullRecipeVC.swift in Sources */,
+				D0B682092B9FBF1000B0E9A0 /* IngredientsVC.swift in Sources */,
+				D0B682072B9FBEB000B0E9A0 /* TabBarViewController.swift in Sources */,
+				D0B682042B9F906B00B0E9A0 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0B681DB2B9EE2A800B0E9A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B681DC2B9EE2A800B0E9A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0B681E02B9EE2AB00B0E9A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B681E12B9EE2AB00B0E9A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0B681E42B9EE2AB00B0E9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0B681E52B9EE2AB00B0E9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0B681E72B9EE2AB00B0E9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24929DC8E846C05DA31A4DB /* Pods-CocktailApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUYG7TPG2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CocktailApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolotska.CocktailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0B681E82B9EE2AB00B0E9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E00CA3B4AF2BAAC3034F87 /* Pods-CocktailApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUYG7TPG2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CocktailApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolotska.CocktailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0B681CD2B9EE2A800B0E9A0 /* Build configuration list for PBXProject "CocktailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B681E42B9EE2AB00B0E9A0 /* Debug */,
+				D0B681E52B9EE2AB00B0E9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B681E62B9EE2AB00B0E9A0 /* Build configuration list for PBXNativeTarget "CocktailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B681E72B9EE2AB00B0E9A0 /* Debug */,
+				D0B681E82B9EE2AB00B0E9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0B681E92B9EE80500B0E9A0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		D0B681EE2B9EE81800B0E9A0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0B681EA2B9EE80500B0E9A0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B681E92B9EE80500B0E9A0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D0B681EC2B9EE80500B0E9A0 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B681E92B9EE80500B0E9A0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		D0B681EF2B9EE81800B0E9A0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B681EE2B9EE81800B0E9A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D0B681F12B9EE81800B0E9A0 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B681EE2B9EE81800B0E9A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0B681CA2B9EE2A800B0E9A0 /* Project object */;
+}
